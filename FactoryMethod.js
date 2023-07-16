@@ -1,3 +1,5 @@
+// Fornece uma interface para criar objetos mas permite que as subclasses decidam qual classe instanciar.
+
 class Veiculo {
   mover() {
     console.log("Veículo está se movendo.");
@@ -35,7 +37,7 @@ class FabricaMoto extends FabricaVeiculo {
   }
 }
 
-
+// Quem cria os veículos são as classes fabricas diretamente.
 function factoryMethod(){
   const fabricaCarro = new FabricaCarro();
   const carro = fabricaCarro.criarVeiculo();

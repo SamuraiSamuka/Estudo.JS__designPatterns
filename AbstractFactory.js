@@ -1,3 +1,5 @@
+// Fornece uma interface para criar famílias de objetos relacionados SEM especificar suas classes concretas.
+
 class Veiculo {
   mover() {
     console.log("Veículo está se movendo.");
@@ -47,6 +49,7 @@ class VeiculoInstancia {
   }
 }
 
+// Quem cria os veículos NÃO são as classes fabricas diretamente e sim a classe de Instanciação.
 function abstractFactory() {
   const fabricaCarro = new FabricaCarro();
   const carro = new VeiculoInstancia(fabricaCarro);

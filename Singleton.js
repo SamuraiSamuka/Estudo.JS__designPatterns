@@ -1,3 +1,6 @@
+// Útil para garantir que uma classe possua apenas 1 única instância.
+// O código abaixo faz uso do conceito de closure do JS.
+
 const Singleton = (() => {
   let instancia;
   
